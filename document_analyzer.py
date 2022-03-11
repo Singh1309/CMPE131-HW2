@@ -5,7 +5,7 @@ HW2 - Q2
 '''
 def document_analyzer(filename):
     file = open(filename, 'r', encoding='utf8')
-    print()
+    print(/r)
     fl=file.read()
     words=fl.split();
 
