@@ -13,7 +13,7 @@ def calculate_time(func):
         # Store start time
         begin = time.time()
 
-        time.sleep(3) # For testing
+        func()
     
         # Store end time
         end = time.time()
