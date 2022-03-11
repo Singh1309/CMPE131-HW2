@@ -6,16 +6,21 @@ HW2 - Q3
 import time
 
 # Decorator
-def calculate_time():
+def calculate_time(func):
     
-    # Store start time
-    begin = time.time()
+    def inner_time():
+        
+        # Store start time
+        begin = time.time()
 
-    time.sleep(3) # For testing
+        time.sleep(3) # For testing
     
-    # Store end time
-    end = time.time()
+        # Store end time
+        end = time.time()
 
-    print("Total time ",end - begin)
+        print("Total time ",end - begin)
+    return inner_time
   
-calculate_time()
+@calculate_time
+def on_time():
+    print('time!')
