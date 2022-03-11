@@ -24,3 +24,4 @@ def calculate_time(func):
 @calculate_time
 def on_time():
     print('time!')
+on_time()
